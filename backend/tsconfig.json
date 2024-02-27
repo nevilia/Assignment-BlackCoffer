@@ -3,15 +3,11 @@
     "target": "es2016",
     "module": "commonjs",
     "outDir": "./build",
+    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
-    "allowJs": true,
-    "moduleResolution": "node"
+    "allowJs": true
   },
   "include": [
     "src/**/*.ts",
