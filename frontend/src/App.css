@@ -1,0 +1,18 @@
+/* body {
+    background-color: #efede6;
+}
+
+@layer components{
+
+    .chartCard {
+        background-color: #fff;
+        border-radius: 19px;
+        @apply shadow-md p-10 m-10 h-[400px] w-[800px]
+    }
+
+    
+}
+
+.chartCard:hover {
+    @apply shadow-xl
+} */

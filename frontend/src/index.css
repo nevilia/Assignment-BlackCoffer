@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+    --bg-color: #efede6;
+    --secondary-color: #336699;
+    --data-color-1: #3b28cc ;
+    --data-color-2: #2667ff ;
+    --data-color-3: #3f8efc ;
+    --data-color-4: #87bfff ;
+    --data-color-5: #add7f6 ;
+    --success-color: #38b000;
+    --error-color: #ba181b;
+    --warning-color: #fdbe39;
+  }
+  
+
+body {
+    background-color: var(--bg-color);
+}
+
+@layer components{
+
+    .chartCard {
+        background-color: #fff;
+        border-radius: 19px;
+        @apply shadow-md p-10 m-10 w-full h-auto sm:h-[400px] sm:w-[750px] overflow-hidden
+    }
+
+    
+}
+
+.chartCard:hover {
+    @apply shadow-xl cursor-pointer
+}
