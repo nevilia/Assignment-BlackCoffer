@@ -12,7 +12,7 @@ interface Props {
 
 const DropdownFilter: React.FC<Props> = ({ options, onSelect }) => {
   return (
-    <select className="p-2 rounded border border-gray-300" onChange={onSelect}>
+    <select className="p-2 rounded-[18px] border border-gray-300" onChange={onSelect}>
       {options.map(option => (
         <option key={option.value} value={option.value}>{option.label}</option>
       ))}
