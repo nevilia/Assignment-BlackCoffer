@@ -103,8 +103,7 @@ const LineChart: React.FC<{ fieldName: string }> = ({ fieldName }) => {
     };
 
     return (
-        <div className=''>
-            <h2>Line Chart</h2>
+        <div className='h-full w-full'>
             <Line data={data} options={options} />
         </div>
     );

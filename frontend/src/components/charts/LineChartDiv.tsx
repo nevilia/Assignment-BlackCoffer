@@ -21,7 +21,7 @@ const LineChartDiv: React.FC = () => {
       <div className="px-10 py-7">
         <DropdownFilter options={options} onSelect={handleSelectField} />
       </div>
-      <div className=" w-full p-5">
+      <div className="p-5">
         <LineChart fieldName={selectedField} />
       </div>
     </div>

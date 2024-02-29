@@ -16,26 +16,20 @@ const App: React.FC = () => {
         <div className='sm:w-full' >
           <NavBar />
           <div className='m-10'>
-            <div className='flex flex-wrap w-full gap-6 '>
+            <div className='flex flex-wrap w-full gap-4 '>
               {/* 1st row */}
-              <div className='flex justify-between h-[430px] w-full'>
-                <div className=' w-[49%] bg-white rounded-[18px] shadow-md p-10 hover:shadow-xl'>
+              <div className='flex flex-wrap justify-between h-auto w-full gap-4'>
+                <div className='w-full sm:min-h-[300px] lg:w-[49%] bg-white rounded-[18px] shadow-md p-10 hover:shadow-xl'>
                   Pie or Doughnut Chart
                 </div>
-                <div className=" w-[49%] bg-white rounded-[18px] shadow-md hover:shadow-xl">
+                <div className="w-full lg:w-[49%] bg-white rounded-[18px] shadow-md hover:shadow-xl">
                   <BarChartDiv />
                 </div>
               </div>
               {/* 2nd row */}
-              <div className='w-full  md:w-full  shadow-md rounded-[18px] bg-white hover:shadow-xl'>
+              <div className='w-3/5  h-[500px] lg:w-3/5  shadow-md rounded-[18px] bg-white hover:shadow-xl'>
                 <LineChartDiv />
               </div>
-              {/* <BarChart fieldName='relevance'/>
-            <BarChart fieldName='intensity'/>
-            <BarChart fieldName='likelihood'/> */}
-
-              {/* <IntensityLineChart />
-            <TopicsStackedBarChart /> */}
             </div>
           </div>
 
