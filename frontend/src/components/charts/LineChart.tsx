@@ -54,7 +54,7 @@ const LineChart: React.FC<{ fieldName: string }> = ({ fieldName }) => {
                 label: 'Likelihood',
                 data: likelihoodData,
                 fill: false,
-                borderColor: 'rgba(75, 192, 192, 1)',
+                borderColor: 'rgba(0,194,199, 1)',
                 tension: 0.1,
                 pointRadius: 0
             },
@@ -62,7 +62,7 @@ const LineChart: React.FC<{ fieldName: string }> = ({ fieldName }) => {
                 label: 'Relevance',
                 data: relevanceData,
                 fill: false,
-                borderColor: 'rgba(192, 75, 192, 1)',
+                borderColor: 'rgba(94,60,88, 1)',
                 tension: 0.1,
                 pointRadius: 0
             },
@@ -70,7 +70,7 @@ const LineChart: React.FC<{ fieldName: string }> = ({ fieldName }) => {
                 label: 'Intensity',
                 data: intensityData,
                 fill: false,
-                borderColor: 'rgba(192, 192, 75, 1)',
+                borderColor: 'rgba(255,191,0, 1)',
                 tension: 0.1,
                 pointRadius: 2
             },

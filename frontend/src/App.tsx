@@ -16,19 +16,24 @@ const App: React.FC = () => {
         <div className='sm:w-full' >
           <NavBar />
           <div className='m-10'>
-            <div className='flex flex-wrap w-full gap-4 '>
+            <div className='flex flex-wrap w-full gap-6 '>
               {/* 1st row */}
-              <div className='flex flex-wrap justify-between h-auto w-full gap-4'>
-                <div className='w-full sm:min-h-[300px] lg:w-[49%] bg-white rounded-[18px] shadow-md p-10 hover:shadow-xl'>
-                  Pie or Doughnut Chart
+              <div className='flex flex-wrap md:flex-nowrap justify-between h-auto w-full gap-4'>
+              <div className='w-full max-h-[500px] md:w-[55%] flex-shrink-0 shadow-md rounded-[18px] bg-white hover:shadow-xl'>
+                  <LineChartDiv />
                 </div>
-                <div className="w-full lg:w-[49%] bg-white rounded-[18px] shadow-md hover:shadow-xl">
+                <div className="w-full lg:w-[43%] bg-white rounded-[18px] shadow-md hover:shadow-xl">
                   <BarChartDiv />
                 </div>
               </div>
               {/* 2nd row */}
-              <div className='w-3/5  h-[500px] lg:w-3/5  shadow-md rounded-[18px] bg-white hover:shadow-xl'>
-                <LineChartDiv />
+              <div className='flex flex-wrap md:flex-nowrap w-full justify-between gap-6'>
+              <div className=' w-full sm:min-h-[300px] md:w-[49%] flex-shrink-0 bg-white rounded-[18px] shadow-md p-10 hover:shadow-xl'>
+                  Pie or Doughnut Chart
+                </div>
+                <div className=' w-full sm:min-h-[300px] md:w-[49%] flex-shrink-0 bg-white rounded-[18px] shadow-md p-10 hover:shadow-xl'>
+                  Pie or Doughnut Chart
+                </div>
               </div>
             </div>
           </div>

@@ -37,6 +37,14 @@ const BarChart = ({ fieldName }: any) => {
         fetchChartData();
     }, [fieldName]);
 
+    // Define custom colors based on field name
+    const backgroundColor = fieldName === 'relevance' ? 'rgba(94,60,88, 0.2)' :
+                            fieldName === 'likelihood' ? 'rgba(0,194,199, 0.2)' :
+                            'rgba(255,191,0, 0.2)';
+    const borderColor = fieldName === 'relevance' ? 'rgba(94,60,88, 1)' :
+                        fieldName === 'likelihood' ? 'rgba(0,194,199, 1)' :
+                        'rgba(255,191,0, 1)';
+
     // Define chart data and options
     const data = {
         labels: chartData.map(dataPoint => dataPoint.fieldCounts.toString()), // y
@@ -44,8 +52,8 @@ const BarChart = ({ fieldName }: any) => {
             {                                                                 // x
                 label: fieldName,
                 data: chartData.map(dataPoint => dataPoint.count),
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor,
+                borderColor,
                 borderWidth: 1,
             },
         ],
