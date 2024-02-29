@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 :root {
-    --bg-color: #efede6;
+    --bg-color: #edf2fb;
     --secondary-color: #336699;
     --data-color-1: #3b28cc ;
     --data-color-2: #2667ff ;
@@ -18,19 +18,4 @@
 
 body {
     background-color: var(--bg-color);
-}
-
-@layer components{
-
-    .chartCard {
-        background-color: #fff;
-        border-radius: 19px;
-        @apply shadow-md p-10 m-10 w-full h-auto sm:h-[400px] sm:w-[750px] overflow-hidden
-    }
-
-    
-}
-
-.chartCard:hover {
-    @apply shadow-xl cursor-pointer
 }
