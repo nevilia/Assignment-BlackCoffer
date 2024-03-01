@@ -8,8 +8,10 @@ function NavBar() {
             <div className="absolute inset-0 bg-[#efede6]  bg-opacity-10 backdrop-filter backdrop-blur-sm "></div>
             <div className="flex justify-between w-full text-xl z-20 items-center">
                 <div className="flex justify-between w-[20%]">
-                    {/* <Link to={'/'}>Menu</Link>
-                    <Link to={'/'}>Charts</Link> */}
+                    <div className="sm:hidden pr-4">
+                        <Link className="pr-4" to={'/'}>Home</Link>
+                        <Link to={'/data'}>Data</Link>
+                    </div>
                 </div>
                 
                 <SearchBar/>
