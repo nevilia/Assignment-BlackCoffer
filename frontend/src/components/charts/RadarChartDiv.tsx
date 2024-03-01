@@ -33,7 +33,7 @@ function RadarChartDiv() {
         <DropdownFilter options={options1} onSelect={handleSelectField} />
         by
         <DropdownFilter options={options2} onSelect={handleSelectedDisplayField} />
-        <h1 className='pl-6 lg:text-2xl text-normal font-semibold capitalize'>Radar Chart by {`${selectedField}`}</h1>
+        <h1 className='pl-6 lg:text-xl text-normal capitalize'>Radar Chart by {`${selectedField}`}</h1>
       </div>
       <div className="p-5 w-full h-full">
         <RadarChart fieldName={selectedField} fieldToDisplay={selectedDisplayField}/>

@@ -23,7 +23,7 @@ function PieChartDiv() {
     <div>
       <div className="flex justify-between items-center px-10 py-7">
         <DropdownFilter options={options} onSelect={handleSelectField} />
-        <h1 className='pl-6 lg:text-2xl text-normal font-semibold capitalize'>Contribution Chart by {`${selectedField}`}</h1>
+        <h1 className='pl-6 lg:text-xl text-normal capitalize'>Contribution Chart by {`${selectedField}`}</h1>
       </div>
       <div className="p-5 w-full h-full">
         <PieChart fieldName={selectedField}/>

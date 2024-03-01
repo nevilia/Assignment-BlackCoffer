@@ -20,7 +20,7 @@ const LineChartDiv: React.FC = () => {
     <div className="">
       <div className="flex justify-between  items-center px-10 py-7">
         <DropdownFilter options={options} onSelect={handleSelectField} />
-        <h1 className='pl-6 lg:text-2xl text-normal font-semibold capitalize'>Collective Chart by {`${selectedField}`}</h1>
+        <h1 className='pl-6 lg:text-xl text-normal capitalize'>Collective Chart by {`${selectedField}`}</h1>
       </div>
       <div className="p-5">
         <LineChart fieldName={selectedField} />
