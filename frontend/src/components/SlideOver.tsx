@@ -15,7 +15,7 @@ function SlideOver({ }: Props) {
             <Link to={'/data'}>Data</Link>
             <Link to={'/'}>Dashboard</Link>
 
-            <div className="mt-[100%] p-[15%] bg-white h-[100px] bg-opacity-30 rounded-[18px] text-[#002855] w-full">
+            <div className="mt-[120%] p-[15%] bg-white h-[100px] bg-opacity-30 rounded-[18px] text-[#002855] w-full">
                     Built By Nikita Birua
             </div>
         </div>

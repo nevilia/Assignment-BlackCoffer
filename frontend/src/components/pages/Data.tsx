@@ -11,13 +11,16 @@ const Data: React.FC = () => {
                 <h3 className="text-lg font-bold mb-2">Types of Graphs Used:</h3>
                 <ul className="list-disc ml-6">
                     <li>
-                        Line Chart - Showing Collective information over filtered range
+                        <b> Line Chart </b> - Showing Collective information over filtered range
                     </li>
                     <li>
-                        Bar Chart - Showcasing Frequency of filtered metric
+                        <b>Bar Chart </b> - Showcasing Frequency of filtered metric
                     </li>
                     <li>
-                        Pie Chart - Depicting Contribution percentage of required metric
+                        <b> Pie Chart </b> - Depicting Contribution percentage of required metric
+                    </li>
+                    <li>
+                        <b> Radar Chart </b> - Showing distribution of counts of different fields over different category, one pair at a time
                     </li>
                 </ul>
             </section>
@@ -33,6 +36,7 @@ const Data: React.FC = () => {
                             <li>Country</li>
                         </ul>
                     </li>
+                    <br />
                     <li>
                         Bar Chart
                         <ul className="list-disc ml-6">
@@ -41,6 +45,7 @@ const Data: React.FC = () => {
                             <li>Likelihood</li>
                         </ul>
                     </li>
+                    <br />
                     <li>
                         Pie Chart
                         <ul className="list-disc ml-6">
@@ -50,6 +55,31 @@ const Data: React.FC = () => {
                             <li>Sector</li>
                             <li>Topic</li>
                             <li>Source</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>
+                        Radar Chart
+                        <ul className="list-decimal ml-6">
+                            <li> First filter set
+                                <ul className="list-disc ml-6"> 
+                                    <li>Relevance</li>
+                                    <li>Intensity</li>
+                                    <li>Likelihood</li>
+                                </ul>
+                            </li>
+                            <li>
+                            Second filter set
+                                <ul className="list-disc ml-6">
+
+                                    <li>Pestle</li>
+                                    <li>Country</li>
+                                    <li>Region</li>
+                                    <li>Sector</li>
+                                    <li>Topic</li>
+                                    <li>Source</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ol>

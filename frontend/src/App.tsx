@@ -6,6 +6,7 @@ import BarChartDiv from './components/charts/BarChartDiv';
 import LineChartDiv from './components/charts/LineChartDiv';
 import PieChartDiv from './components/charts/PieChartDiv';
 import Data from './components/pages/Data';
+import RadarChartDiv from './components/charts/RadarChartDiv';
 
 function MainDiv() {
   return (
@@ -21,12 +22,12 @@ function MainDiv() {
                     </div>
                   </div>
                   {/* 2nd row */}
-                  <div className='flex flex-wrap md:flex-nowrap h-auto w-full justify-between gap-6'>
-                    <div className=' w-full sm:min-h-[300px] md:w-[45%] flex-shrink-0 bg-white rounded-[18px] shadow-md hover:shadow-xl'>
+                  <div className='flex flex-wrap md:flex-nowrap h-auto w-full justify-between gap-4'>
+                    <div className=' w-full sm:min-h-[300px] md:w-[49%] flex-shrink-0 bg-white rounded-[18px] shadow-md hover:shadow-xl'>
                       <PieChartDiv />
                     </div>
-                    <div className=' w-full sm:min-h-[300px] md:w-[53%] flex-shrink-0 bg-white rounded-[18px] shadow-md p-10 hover:shadow-xl'>
-
+                    <div className=' w-full sm:min-h-[300px] md:w-[49%] bg-white rounded-[18px] shadow-md hover:shadow-xl'>
+                      <RadarChartDiv/>
                     </div>
                   </div>
 
